@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Object Detection</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}"> <!-- Link to your CSS file -->
+</head>
+<body>
+    <h1>Object Detection</h1>
+    <input type="file" id="imageInput">
+    <button onclick="uploadImage()">Upload Image</button>
+    
+    <div class="output-box" id="outputBox">
+        <canvas id="outputCanvas" width="800" height="600"></canvas>
+
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script> <!-- Link to your JavaScript file -->
+</body>
+</html>
